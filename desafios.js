@@ -180,8 +180,15 @@ console.log(ehMaiorDeIdade(colega))
    Fabrique 3 produtos: Caderno 20, Caneta 5, Mochila 90.
    Mostre o nome e o preço de cada um.
    Resultado esperado: Caderno 20 / Caneta 5 / Mochila 90 */
-// >>> sua resposta da TAREFA 12 <<<
-
+function criarProduto(nome, preco) {
+   return {nome: nome, preco: preco};
+}
+let produto1 = criarProduto("Caderno", 20)
+let produto2 = criarProduto("Caneta", 5)
+let produto3 = criarProduto("Mochila", 90)
+console.log(produto1)
+console.log(produto2)
+console.log(produto3)
 
 
 /* ================= EXTRA (opcional) — MÉTODO ================= */
@@ -206,12 +213,12 @@ console.log(gato.nome); // PREVEJA:  ______
    Responda nos comentários abaixo, com suas próprias palavras:
 
    1) O que é um objeto?  (uma frase sua)
-      R: ______________________________________________
+      R: É uma variavel que você pode guardar diversos valores.
 
-   2) Complete: "Eu uso o ponto (.) quando eu quero ______________."
+   2) Complete: "Eu uso o ponto (.) quando eu quero citar um argumento de um objeto."
 
    3) O que aparece quando você lê uma propriedade que não existe?
-      R: ______________________________________________
+      R: Acontece um erro.
 
    Terminou tudo? Abra o desafio_aluno.md e leia o "PANORAMA":
    formas mais avançadas de objeto, só para conhecer.
